@@ -272,6 +272,7 @@ static NSString *const SUUpdaterDefaultsObservationContext = @"SUUpdaterDefaults
             if (reachability != NULL) {
                 SCNetworkReachabilityGetFlags(reachability, &flags);
                 CFRelease(reachability);
+				reachabilityResult = YES;
             }
 
 			if( reachabilityResult )
